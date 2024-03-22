@@ -1,0 +1,108 @@
+body {
+  background-color: #ECECEC;
+  font-family: 'Poppins', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: #121214;
+  width: 100vw;
+  height: 30vh;
+}
+
+header .header__content {
+  color: #FFFFFF;
+  width: 736px;
+}
+
+header .header__content h1 {
+  font-family: 'Archivo', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 42px;
+}
+
+header .header__content p {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 26px;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -10vh; /* Ajusta para 5% em cima do header */
+}
+
+.content__form {
+  background-color: #FAFAFC;
+  width: 90%;
+  max-width: 736px;
+  padding: 64px;
+  border-radius: 10px;
+}
+
+.content__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.content__wrapper label {
+  margin-bottom: 16px;
+}
+
+.content__wrapper input {
+  width: calc(100% - 32px); /* Considera o padding de 64px */
+  height: 32px;
+  border: 1px solid #E6E6F0;
+  border-radius: 8px;
+  padding: 8px;
+  margin-bottom: 16px;
+}
+
+.content__wrapper textarea {
+  width: calc(100% - 32px); /* Considera o padding de 64px */
+  height: 168px;
+  border: 1px solid #E6E6F0;
+  border-radius: 8px;
+  padding: 8px;
+  margin-bottom: 16px;
+}
+
+.content__wrapper textarea {
+  resize: none; /* Impede o redimensionamento */
+}
+
+.content__footer {
+  background-color: #CCCCCC; /* Altera para cinza */
+  padding: 16px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.content__footer input[type="submit"] {
+  background-color: #FF0000; /* Altera para vermelho */
+  color: #FFFFFF;
+  border: none;
+  border-radius: 8px;
+  height: 56px;
+  padding: 0 32px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.content__footer input[type="submit"]:hover {
+  background-color: #CC0000; /* Altera tom do vermelho no hover */
+}
+
+.line {
+  border-top: 1px solid #E6E6F0;
+  margin-top: 8px;
+  margin-bottom: 16px;
+  width: 100%;
+}
