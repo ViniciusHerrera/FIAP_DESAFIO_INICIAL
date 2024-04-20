@@ -1,108 +1,146 @@
 body {
   background-color: #ECECEC;
-  font-family: 'Poppins', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  line-height: 26px;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 header {
+  background-color: #121214;
+  color: #fff;
+  width: 100%;
+  height: 368px;
+
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #121214;
-  width: 100vw;
-  height: 30vh;
 }
 
 header .header__content {
-  color: #FFFFFF;
+  font-weight: bold; 
+  
+  height: 50%;
   width: 736px;
+  display: flex;
+  flex-direction: column;
+  
+  justify-content: flex-end;
+  align-items: flex-start;
 }
 
 header .header__content h1 {
-  font-family: 'Archivo', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: "Archivo", sans-serif;
   font-size: 36px;
-  font-weight: 700;
   line-height: 42px;
-}
-
-header .header__content p {
-  font-size: 16px;
-  font-weight: bold;
-  line-height: 26px;
+  margin-bottom: 10px;
 }
 
 .content {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: -10vh; /* Ajusta para 5% em cima do header */
-}
+  position: relative;
+  top: -70px;
+  background-color: #fff;
+  width: 736px;
+  height: 120vh;
+  border: 1px solid #D6D6D6;
+  border-radius: 8px;
 
-.content__form {
-  background-color: #FAFAFC;
-  width: 90%;
-  max-width: 736px;
-  padding: 64px;
-  border-radius: 10px;
-}
-
-.content__wrapper {
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
 }
 
-.content__wrapper label {
-  margin-bottom: 16px;
+.content .content__title {
+  width: 100%;
+  height: 45px;
+
+  font-family: "Archivo", sans-serif;
+  font-size: 24px;
+  font-weight: semibold; 
+  line-height: 34px;
+
+  border-bottom: 1px solid #E6E6F0;
+
+  margin-bottom: 10px;
 }
 
-.content__wrapper input {
-  width: calc(100% - 32px); /* Considera o padding de 64px */
-  height: 32px;
-  border: 1px solid #E6E6F0;
-  border-radius: 8px;
-  padding: 8px;
-  margin-bottom: 16px;
+.content .content__wrapper {
+  width: 100%;
+  height: 100%;
+  padding: 30px 50px;
+
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  overflow: hidden;
+  
 }
 
-.content__wrapper textarea {
-  width: calc(100% - 32px); /* Considera o padding de 64px */
-  height: 168px;
-  border: 1px solid #E6E6F0;
-  border-radius: 8px;
-  padding: 8px;
-  margin-bottom: 16px;
+.content .content__footer {
+  background-color: #F0F0F4;
+  width: 100%;
+  height: 15%;
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
 }
 
-.content__wrapper textarea {
-  resize: none; /* Impede o redimensionamento */
-}
-
-.content__footer {
-  background-color: #CCCCCC; /* Altera para cinza */
-  padding: 16px;
-  border-radius: 10px;
-  text-align: center;
-}
-
-.content__footer input[type="submit"] {
-  background-color: #FF0000; /* Altera para vermelho */
+.content .content__footer input[type="submit"] {
+  background-color: #DB1B1B; /* Altera para vermelho */
   color: #FFFFFF;
+
   border: none;
   border-radius: 8px;
-  height: 56px;
+  width: 80%;
+  height: 50%;
   padding: 0 32px;
-  font-size: 16px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  
+  font-family: "Archivo", sans-serif;
+  font-size: 16px;
+  font-weight: semibold; 
 }
 
-.content__footer input[type="submit"]:hover {
-  background-color: #CC0000; /* Altera tom do vermelho no hover */
-}
-
-.line {
-  border-top: 1px solid #E6E6F0;
-  margin-top: 8px;
-  margin-bottom: 16px;
+.fields {
   width: 100%;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  color: #4E4958;
+}
+
+.fields input {
+  width: 99%;
+  line-height: 32px;
+  border: none;
+  border: 1px solid #E6E6F0;
+  border-radius: 8px;
+
+  
+}
+
+.fields textarea {
+  width: 99%;
+  resize: none;
+  line-height: 24px;
+  border: 1px solid #E6E6F0;
+  border-radius: 8px;
 }
